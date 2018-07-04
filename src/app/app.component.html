@@ -10,7 +10,7 @@
   </div>
   <div>
     <div>
-      <button [disabled]="isTracking" class="btn btn-primary" (click)="findMe()">Find me</button>
+      <button [disabled]="isTracking" class="btn btn-primary" (click)="getLocation()">Find me</button>
       <button class="btn btn-primary" (click)="trackMe()">Track me</button>
     </div>
     <div class="text-white">
@@ -28,3 +28,9 @@
       </div>
     </div>
   </div>
+
+  <span>
+    <button id="track" class="launch-map" data-toggle="modal" data-target="#mapModal" (click)="track()"
+      style="margin-top:13px;">Track
+  </button>
+  </span>
